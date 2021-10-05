@@ -1,0 +1,14 @@
+.header-container {
+  height:400px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  
+  background-color: #f28500;
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+margin-top: 110px;
+
+}
