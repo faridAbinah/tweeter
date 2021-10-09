@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Disable viewport Zooming -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- Meta Information -->
     <title class="Bungee">Tweeter - Home Page</title>
 
@@ -24,11 +26,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/0e435b51ac.js" crossorigin="anonymous"></script>
+
+    <!--Time ago Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
     <!--Composer char counter-->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    
+
     <!--Jquery-->
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -67,7 +76,10 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
+        <form  id="tweet-form" method="POST" action="/tweets/">
+          <p id="0-char-error" class="error-message">Invalid input, 0 characters were entered. Please try again.</p>
+          <p id="max-char-error" class="error-message">Invalid input, more than 140 characters were entered. Please try again.</p>
+
           <label class="tweet-label" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
          
@@ -77,32 +89,13 @@
           </div>
         </form>
       </section>
+
+
       <!--Tweet section-->
-      <div id="tweet-box" class="tweet-container">
-      <article>
-        <header>
-          <div class="flex">
-          <img class="avatar" src="/images/profile-hex.png">
-          <p>
-            Rhoda Jacobs
-          <p>
-        </div>
-        <div>
-          <p>@Mrs.Jacobs<p>
-        </div>
-        </header>
-        This is the tweet
-        <hr>
-        <footer>
-         10 days ago
-          <div id="icons">
-          <a href=""><i class="fas fa-flag icons"></i></a>
-          <a href=""><i class="fas fa-retweet icons"></i></a>
-          <a href=""><i class="fas fa-heart icons"></i></a>
-          </div>
-        </footer>
-      </article>
-     </div>
+      <section id="tweet-section" class="center" >
+        
+      
+      </section>
     </main>
   </body>
 </html>
