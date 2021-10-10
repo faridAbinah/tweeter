@@ -113,6 +113,12 @@ box-shadow: 10px 10px rgba(204,202,224,255);
   display:flex;
 }
 
+.error-message{
+  color:red;
+  border-style:outset;
+  font-family:'Bungee', cursive;
+}
+
 
 
 

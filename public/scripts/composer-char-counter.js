@@ -5,11 +5,11 @@ $(document).ready(function() {
   
   $('#tweet-text').on('keyup', function() {
     
-    // console.log($(this).val().length);
+  
 
     $(this).parent().find('#submit-counter').find('output').text( 140 - $(this).val().length);
-    // .container div output
-    console.log($(this).parent().find("#submit-counter").find("output"));
+   
+    // console.log($(this).parent().find("#submit-counter").find("output"));
 
     
     if($(this).val().length >= 140) {
