@@ -35,6 +35,28 @@ body {
 
 }
 
+@media only screen and (min-width:1023px) {
+  .flex-row {
+    display:flex;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+
+  .header-container {
+    margin:50px 50px 0px 0px;
+    margin-top:25px;
+  }
+  .container {
+    margin-top:28px;
+  }
+}
+
+
+
+/*  */
+
 
 
 /*

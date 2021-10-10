@@ -1,7 +1,7 @@
 .nav-container {
   height: 120px;
   width: 100%;
-  background-color:#4056A1;
+  background-color:orange;
   color:#FFFFFF;
   font-family:'Bungee', cursive;
   padding: 2.5em 1.5em 0 1.5em;
@@ -21,6 +21,13 @@
   display:flex;
   flex-direction:column;
   align-items: center;
+}
+
+@media only screen and (min-width:1024px) {
+
+  .nav-container {
+    background-color:#4056A1;
+  }
 }
 
 
